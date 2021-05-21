@@ -211,28 +211,28 @@ if(window.outerWidth <= 767 ){
 
     // .speakers-content
 
-    if(window.scrollY >= 780){
+    if(window.scrollY >= 700){
       speakers_head.style.cssText = bottom;
          speakers_item[0].style.cssText = bottom;
       }
 
 
-   if(window.scrollY >= 1100){
+   if(window.scrollY >= 1000){
          speakers_item[1].style.cssText = bottom;
    }
-   if(window.scrollY >= 1350){
+   if(window.scrollY >= 1250){
       speakers_item[2].style.cssText = bottom;;
    }
 
-   if(window.scrollY >= 1800){
+   if(window.scrollY >= 1700){
       speakers_item[3].style.cssText = bottom;
    }
 
-   if(window.scrollY >= 2050){
+   if(window.scrollY >= 1950){
       speakers_item[4].style.cssText = bottom;
   }
 
-  if(window.scrollY >= 2300){
+  if(window.scrollY >= 2200){
    speakers_item[5].style.cssText = bottom;
   }
 
@@ -240,57 +240,57 @@ if(window.outerWidth <= 767 ){
 // end speakers
 
 // start schedule
-if(window.scrollY >= 3000){
+if(window.scrollY >= 2900){
    schedule_head.style.cssText = bottom;
 }
 
-if(window.scrollY >= 3200){
+if(window.scrollY >= 3100){
    schedule_ul.style.cssText = bottom;
 }
 
-if(window.scrollY >= 3350){
+if(window.scrollY >= 3250){
    schedule_p.style.cssText = bottom;
 }
  
 
-if(window.scrollY >= 3500){
+if(window.scrollY >= 3400){
       schedule_event[0].style.cssText = bottom;
 }
 
-if(window.scrollY >= 3700){
+if(window.scrollY >= 3600){
    schedule_event[1].style.cssText = bottom;
 }
 
-if(window.scrollY >= 4000){
+if(window.scrollY >= 3900){
    schedule_event[2].style.cssText = bottom;
 }
 
-if(window.scrollY >= 4200){
+if(window.scrollY >= 4100){
    schedule_event[3].style.cssText = bottom;
 }
 
-if(window.scrollY >= 4550){
+if(window.scrollY >= 4450){
    schedule_event[4].style.cssText = bottom;
 }
 
-if(window.scrollY >= 4850){
+if(window.scrollY >= 4750){
    schedule_event[5].style.cssText = bottom;
 }
 
-if(window.scrollY >= 5150){
+if(window.scrollY >= 5050){
    schedule_event[6].style.cssText = bottom;
 }
 
 // end schedule
 
 // start venue
-if(window.scrollY >= 5500){
+if(window.scrollY >= 5400){
    venue_head.style.cssText =  bottom;
    venue[0].style.cssText = left;
 }
 
 
-if(window.scrollY >= 6000){
+if(window.scrollY >= 5900){
    venue[1].style.cssText = right;
 }
 
@@ -298,37 +298,37 @@ if(window.scrollY >= 6000){
 
 
 // start gallery
-if(window.scrollY >= 6350){
+if(window.scrollY >= 6250){
       venue_gallery[0].style.cssText = bottom;
 }
 
-if(window.scrollY >= 6650){
+if(window.scrollY >= 6550){
       venue_gallery[1].style.cssText = bottom;
 }
 
-if(window.scrollY >= 6900){
+if(window.scrollY >= 6800){
    venue_gallery[2].style.cssText = bottom;
 }
 
-if(window.scrollY >= 7150){
+if(window.scrollY >= 7050){
    venue_gallery[2].style.cssText = bottom;
 }
 
-if(window.scrollY >= 7450){
+if(window.scrollY >= 7350){
    venue_gallery[3].style.cssText = bottom;
 }
 
-if(window.scrollY >= 7800){
+if(window.scrollY >= 7700){
    venue_gallery[4].style.cssText = bottom;
 }
-if(window.scrollY >= 8100){
+if(window.scrollY >= 8000){
    venue_gallery[5].style.cssText = bottom;
 }
-if(window.scrollY >= 8350){
+if(window.scrollY >= 8250){
    venue_gallery[6].style.cssText = bottom;
 }
 
-if(window.scrollY >= 8650){
+if(window.scrollY >= 8550){
    venue_gallery[7].style.cssText = bottom;
 }
 
@@ -337,19 +337,19 @@ if(window.scrollY >= 8650){
 
 // start hotel
 
-if(window.scrollY >= 9300){ 
+if(window.scrollY >= 9200){ 
    
    hotel_head.style.cssText = bottom;
 }
-if(window.scrollY >= 9450){
+if(window.scrollY >= 9350){
       hotel[0].style.cssText = left;
 }
 
-if(window.scrollY >= 9700){
+if(window.scrollY >= 9600){
    hotel[1].style.cssText = bottom;
 }
 
-if(window.scrollY >= 9900){
+if(window.scrollY >= 9800){
    hotel[2].style.cssText = right;
 }
 // end hotel
@@ -357,39 +357,39 @@ if(window.scrollY >= 9900){
 
 // start sponsors
 
-if(window.scrollY >= 10500){
+if(window.scrollY >= 10400){
   
    sponsors_head.style.cssText =bottom;
 }
-if(window.scrollY >= 10600){
+if(window.scrollY >= 10500){
       sponsors[0].style.cssText = bottom;
 }
 
-if(window.scrollY >= 10800){
+if(window.scrollY >= 10700){
    sponsors[1].style.cssText = bottom;
 }
 
-if(window.scrollY >= 11000){
+if(window.scrollY >= 19000){
    sponsors[2].style.cssText = bottom;
 }
 
-if(window.scrollY >= 11200){
+if(window.scrollY >= 11100){
    sponsors[3].style.cssText = bottom;
 }
 
-if(window.scrollY >= 11400){
+if(window.scrollY >= 11300){
    sponsors[4].style.cssText = bottom;
 }
 
-if(window.scrollY >= 11600){
+if(window.scrollY >= 11500){
    sponsors[5].style.cssText = bottom;
 }
 
-if(window.scrollY >= 11800){
+if(window.scrollY >= 11700){
    sponsors[6].style.cssText = bottom;
 }
 
-if(window.scrollY >= 12000){
+if(window.scrollY >= 11900){
    sponsors[7].style.cssText = bottom;
 }
 
@@ -399,11 +399,11 @@ if(window.scrollY >= 12000){
 
 // head_faq
 
-if(window.scrollY >= 12200){
+if(window.scrollY >= 12100){
  
    faq_head.style.cssText = bottom;
 }
-if(window.scrollY >= 12400){
+if(window.scrollY >= 12300){
  
   faq_contener.style.cssText = bottom;
 }
@@ -411,11 +411,11 @@ if(window.scrollY >= 12400){
 // end faq
 
 // start .newsletter
-if(window.scrollY >= 13200){
+if(window.scrollY >= 13100){
   
    newsletter_head.style.cssText = bottom;
 }
-if(window.scrollY >= 13400){
+if(window.scrollY >= 13300){
  
   newsletter_form.style.cssText = bottom;
 }
@@ -424,38 +424,38 @@ if(window.scrollY >= 13400){
 
 // start buy ticket
 
-if(window.scrollY >= 13650){
+if(window.scrollY >= 13550){
   
    ticket_head.style.cssText = bottom;
 }
 
-if(window.scrollY >= 13900){
+if(window.scrollY >= 13800){
   ticket[0].style.cssText = left;    
 }
 
-if(window.scrollY >= 14300){
+if(window.scrollY >= 14200){
    ticket[1].style.cssText = bottom;;
  }
 
 
- if(window.scrollY >= 14800){
+ if(window.scrollY >= 14700){
    ticket[2].style.cssText = right;
  }
 // end buy ticket
 
 // start contact us
-if(window.scrollY >= 15050){
+if(window.scrollY >= 14450){
  
    contact_head.style.cssText = bottom;
 }
 
-if(window.scrollY >= 15300){
+if(window.scrollY >= 15200){
   contact_item[0].style.cssText = bottom; 
 }
-if(window.scrollY >= 15600){
+if(window.scrollY >= 15500){
    contact_item[1].style.cssText = bottom; 
  }
- if(window.scrollY >= 15900){
+ if(window.scrollY >= 15800){
    contact_item[2].style.cssText = bottom; 
  }
 
