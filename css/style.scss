@@ -7,7 +7,7 @@ body{
     -moz-transform: none !important;
     -ms-transform: none !important;
     -o-transform: none !important;
-     overflow:hidden;
+     overflow-y:hidden;
 }
 // all elements
 *{
@@ -1274,11 +1274,11 @@ footer{
 
 @keyframes rotate {
     from{
-        transform:rotateZ(-360deg);
-        -webkit-transform:rotateZ(-360deg);
-        -moz-transform:rotateZ(-360deg);
-        -ms-transform:rotateZ(-360deg);
-        -o-transform:rotateZ(-360deg);
+        transform:rotateZ(360deg);
+        -webkit-transform:rotateZ(360deg);
+        -moz-transform:rotateZ(360deg);
+        -ms-transform:rotateZ(360deg);
+        -o-transform:rotateZ(360deg);
 }
     to{
         transform:rotateZ(0deg);

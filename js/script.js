@@ -197,7 +197,7 @@ if(window.scrollY >= 6800){
 
 console.log(window.pageYOffset);
 // phone animation
-if(window.outerWidth == 320 ){
+if(window.outerWidth <= 767 ){
  
    // about 
    if(window.scrollY >= 450){
@@ -475,11 +475,11 @@ window.onload = function(){
       // start louding
    let loud = document.querySelector(".louding");
    loud.style.display = "none";
-   document.body.style.overflow = "auto";
+   document.body.style.overflowY = "auto";
    hero_content = document.querySelector(".hero-content");
    // start hero_content
       hero_content.style.cssText = "transform:scale(1,1);";
-   },4000);
+   },2000);
 
   
 };
