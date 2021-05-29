@@ -1374,14 +1374,14 @@ i{color:$minColor;}
 // start up animation 
 
 %up-animation{
-   transition: 2s ease-in-out;
+   transition: 1s ease-in-out;
    position:relative;
    bottom:-400px;
    visibility:hidden;
-   -webkit-transition: 2s ease-in-out;
-   -moz-transition: 2s ease-in-out;
-   -ms-transition: 2s ease-in-out;
-   -o-transition: 2s ease-in-out;
+   -webkit-transition: 1s ease-in-out;
+   -moz-transition: 1s ease-in-out;
+   -ms-transition: 1s ease-in-out;
+   -o-transition: 1s ease-in-out;
 }
 
 %left{

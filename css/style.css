@@ -921,14 +921,14 @@ footer {
 .about .back .contener .about-content .about-event,
 .about .back .contener .about-content .about-where,
 .about .back .contener .about-content .about-when, .speakers .contener .head, .speakers .contener .speakers-content > div, .schedule .contener .head, .schedule .contener ul, .schedule .contener > p, .schedule .contener .content-schedule > div.registration, .schedule .contener .content-schedule > div.event, .venue .head, .venue .gallery div, .hotels .head, .hotels .contener .content .item2, .sponsors .head, .sponsors .contener .content .item, .faq .head, .faq .contener, .newsletter .head, .newsletter .form, .buy_ticket .head, .buy_ticket .contener .buy_ticket_content .item2, .contact .head, .contact .contener .contact-content .item {
-  transition: 2s ease-in-out;
+  transition: 1s ease-in-out;
   position: relative;
   bottom: -400px;
   visibility: hidden;
-  -webkit-transition: 2s ease-in-out;
-  -moz-transition: 2s ease-in-out;
-  -ms-transition: 2s ease-in-out;
-  -o-transition: 2s ease-in-out; }
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out; }
 
 .venue .find .mapouter, .hotels .contener .content .item1, .buy_ticket .contener .buy_ticket_content .item1 {
   visibility: hidden;
