@@ -23,14 +23,14 @@
                      <nav>
                         <ul>
                             <li><a href="#">Home</a></li>
-                            <li><a href="#"> About</a></li>
-                            <li><a href="#"> Speakers</a></li>
-                            <li><a href="#">Schedule</a></li>
-                            <li><a href="#">Venue</a></li>
-                            <li><a href="#">Hotels</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Sponsors</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#about"> About</a></li>
+                            <li><a href="#speakers"> Speakers</a></li>
+                            <li><a href="#schedule">Schedule</a></li>
+                            <li><a href="#venue">Venue</a></li>
+                            <li><a href="#hotels">Hotels</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#sponsors">Sponsors</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                      </nav>
                      <!--end nav-->
@@ -87,7 +87,7 @@
             <!--end hero-->
 
             <!--start about event-->
-                <section class="about">
+                <section class="about" id="about">
                     <div class="back">
                     <div class="contener">
                         <!--start content-->
@@ -117,7 +117,8 @@
              <!--end about event-->
              <!--start speakers-->
 
-                <section class="speakers">
+                <section class="speakers" id ="speakers">
+                    <div class="back">
 
                     <div class="contener">
                       <div class="head">
@@ -227,7 +228,7 @@
 
               <!--start  SCHEDULE-->
 
-              <section class="schedule">
+              <section class="schedule" id="#schedule">
                
                 <div class="contener">
                     <div class="head">
@@ -329,7 +330,7 @@
               </section>
 
               <!--strat VENUE-->
-              <section class="venue">
+              <section class="venue" id="venue">
                   <div class="head">
                       <h2>EVENT VENUE</h2>
                       <p>Event venue location info and gallery</p>
@@ -349,7 +350,7 @@
                   </div>
 
 
-                  <div class="gallery">
+                  <div class="gallery" id="gallery">
                       <div><img src="../img/venue-gallery/1.jpg"></div>
                       <div><img src="../img/venue-gallery/2.jpg"></div>
                       <div><img src="../img/venue-gallery/3.jpg"></div>
@@ -362,7 +363,7 @@
               </section>
           <!--start Hotels-->
 
-          <section class="hotels">
+          <section class="hotels" id="hotels">
               <div class="head">
                   <h2>HOTELS</h2>
                   <p>Her are some nearby hotels</p>
@@ -422,7 +423,7 @@
 
           <!--start SPONSORS-->
 
-          <section class="sponsors">
+          <section class="sponsors" id="sponsors">
             <div class="head">
                 <h2>SPONSORS</h2>
                 <p></p>
@@ -474,7 +475,7 @@
         </section>
 
         <!--start faq-->
-        <section class="faq">
+        <section class="faq" id="faq">
             <div class="head">
                 <h2>F.A.Q</h2>
             </div>
@@ -592,7 +593,7 @@
          
         </section>
 
-        <section class="buy_ticket">
+        <section class="buy_ticket" id="buy_ticket">
             <div class="head">
                 <h2>BUY TICKETS</h2>
                 <p>Velit consequatur consequatur inventore iste fugit unde omnis eum aut.</p>
@@ -662,7 +663,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="head">
                 <h2>CONTACT US</h2>
                 <p>Nihil officia ut sint molestiae tenetur.</p>
@@ -711,7 +712,7 @@
 
             <!---start footer-->
 
-            <footer class="footer">
+            <footer class="footer" id="footer">
 
                 <div class="contener">
                   <div class="footer-content">
@@ -780,14 +781,32 @@
                         Designed by <span> Mahmoud Mohamed</span></p>
                 </div>
             </footer>
-
+       <!--start up bottom-->
             <a  class = "up" href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-
+      <!--start louding pag-->
             <div class="louding">
+                    <i class="fa fa-spinner" aria-hidden="true"></i> 
+            </div>
+            <!--start buy ticket login-->
 
+            <div class="login_ticket">
+                <section>
+                <div class="heads">
+                    <p>Buy Tickets </p>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                    <div class="login">
+                        <input type="text" placeholder="your name">
+                        <input type="email" placeholder="your email">
+                         <select name="premum" id="">
+                             <option>select type access</option>
+                             <option>standar access</option>
+                             <option>premum access</option>
+                         </select>
+                        <input type="submit" value="Buy Tickets">
+                    </div>
                
-                    <i class="fa fa-spinner" aria-hidden="true"></i>
-                
+                </section>
             </div>
        
        </body>

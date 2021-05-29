@@ -25,9 +25,15 @@ let  contact_item = document.querySelector(".contact .contener .contact-content"
 let right = " position:relative; right:0px;  visibility: visible;";
 let left = " position:relative; left:0px;  visibility: visible;";
 let bottom = " position:relative;  bottom:0px; visibility: visible;";
+let upPage = document.querySelector(".up");
 
 window.onscroll = function(){
-
+ if(window.scrollY >= 200){
+   upPage.style.visibility = "visible";
+ }
+ if(window.scrollY < 200){
+   upPage.style.visibility = "hidden";
+ }
  //start header
    if(window.scrollY >= 20){
       header.style.backgroundColor = "rgba(2, 2, 20, 1)"; 
@@ -68,7 +74,7 @@ window.onscroll = function(){
 }
 
 // start schedule
-if(window.scrollY >= 1500){
+if(window.scrollY >= 1300){
  
    schedule_head.style.cssText = bottom;
    schedule_ul.style.cssText = bottom;
@@ -84,9 +90,13 @@ if(window.scrollY >= 1800){
    }
 }
 // start venue
-if(window.scrollY >= 2700){
+
+if(window.scrollY >= 2200){
   
    venue_head.style.cssText =  bottom;
+
+}
+if(window.scrollY >= 2700){
    venue[0].style.cssText = left;
    venue[1].style.cssText = right;
 }
@@ -109,7 +119,7 @@ if(window.scrollY >= 3250){
 
 // hotel
 
-if(window.scrollY >= 3900){ 
+if(window.scrollY >= 3600){ 
    
    hotel_head.style.cssText =bottom;
 }
@@ -165,7 +175,7 @@ if(window.scrollY >= 5800){
 
 // start buy ticket
 
-if(window.scrollY >= 6100){
+if(window.scrollY >= 5800){
   
     ticket_head.style.cssText = bottom;
 }
@@ -200,8 +210,7 @@ console.log(window.pageYOffset);
 if(window.outerWidth <= 767 ){
  
    // about 
-   if(window.scrollY >= 450){
-      
+   if(window.scrollY >= 250){      
       for(var i =0; i<3;  i++){
 
          about_item[i].style.cssText = bottom;
@@ -211,28 +220,28 @@ if(window.outerWidth <= 767 ){
 
     // .speakers-content
 
-    if(window.scrollY >= 700){
+    if(window.scrollY >= 600){
       speakers_head.style.cssText = bottom;
          speakers_item[0].style.cssText = bottom;
       }
 
 
-   if(window.scrollY >= 1000){
+   if(window.scrollY >= 900){
          speakers_item[1].style.cssText = bottom;
    }
-   if(window.scrollY >= 1250){
+   if(window.scrollY >= 1150){
       speakers_item[2].style.cssText = bottom;;
    }
 
-   if(window.scrollY >= 1700){
+   if(window.scrollY >= 1600){
       speakers_item[3].style.cssText = bottom;
    }
 
-   if(window.scrollY >= 1950){
+   if(window.scrollY >= 1850){
       speakers_item[4].style.cssText = bottom;
   }
 
-  if(window.scrollY >= 2200){
+  if(window.scrollY >= 2100){
    speakers_item[5].style.cssText = bottom;
   }
 
@@ -240,57 +249,55 @@ if(window.outerWidth <= 767 ){
 // end speakers
 
 // start schedule
-if(window.scrollY >= 2900){
+if(window.scrollY >= 2800){
    schedule_head.style.cssText = bottom;
-}
-
-if(window.scrollY >= 3100){
    schedule_ul.style.cssText = bottom;
-}
-
-if(window.scrollY >= 3250){
    schedule_p.style.cssText = bottom;
 }
- 
 
-if(window.scrollY >= 3400){
+
+
+if(window.scrollY >= 3200){
       schedule_event[0].style.cssText = bottom;
 }
 
-if(window.scrollY >= 3600){
+if(window.scrollY >= 3400){
    schedule_event[1].style.cssText = bottom;
 }
 
-if(window.scrollY >= 3900){
+if(window.scrollY >= 3700){
    schedule_event[2].style.cssText = bottom;
 }
 
-if(window.scrollY >= 4100){
+if(window.scrollY >= 3900){
    schedule_event[3].style.cssText = bottom;
 }
 
-if(window.scrollY >= 4450){
+if(window.scrollY >= 4250){
    schedule_event[4].style.cssText = bottom;
 }
 
-if(window.scrollY >= 4750){
+if(window.scrollY >= 4550){
    schedule_event[5].style.cssText = bottom;
 }
 
-if(window.scrollY >= 5050){
+if(window.scrollY >= 4800){
    schedule_event[6].style.cssText = bottom;
 }
 
 // end schedule
 
 // start venue
-if(window.scrollY >= 5400){
+if(window.scrollY >= 5000){
    venue_head.style.cssText =  bottom;
+}
+
+if(window.scrollY >= 5200){
    venue[0].style.cssText = left;
 }
 
 
-if(window.scrollY >= 5900){
+if(window.scrollY >= 5800){
    venue[1].style.cssText = right;
 }
 
@@ -298,37 +305,37 @@ if(window.scrollY >= 5900){
 
 
 // start gallery
-if(window.scrollY >= 6250){
+if(window.scrollY >= 6150){
       venue_gallery[0].style.cssText = bottom;
 }
 
-if(window.scrollY >= 6550){
+if(window.scrollY >= 6450){
       venue_gallery[1].style.cssText = bottom;
 }
 
-if(window.scrollY >= 6800){
+if(window.scrollY >= 6700){
    venue_gallery[2].style.cssText = bottom;
 }
 
-if(window.scrollY >= 7050){
+if(window.scrollY >= 6900){
    venue_gallery[2].style.cssText = bottom;
 }
 
-if(window.scrollY >= 7350){
+if(window.scrollY >= 7250){
    venue_gallery[3].style.cssText = bottom;
 }
 
-if(window.scrollY >= 7700){
+if(window.scrollY >= 7600){
    venue_gallery[4].style.cssText = bottom;
 }
-if(window.scrollY >= 8000){
+if(window.scrollY >= 7900){
    venue_gallery[5].style.cssText = bottom;
 }
-if(window.scrollY >= 8250){
+if(window.scrollY >= 8150){
    venue_gallery[6].style.cssText = bottom;
 }
 
-if(window.scrollY >= 8550){
+if(window.scrollY >= 8450){
    venue_gallery[7].style.cssText = bottom;
 }
 
@@ -337,19 +344,19 @@ if(window.scrollY >= 8550){
 
 // start hotel
 
-if(window.scrollY >= 9200){ 
+if(window.scrollY >= 9100){ 
    
    hotel_head.style.cssText = bottom;
 }
-if(window.scrollY >= 9350){
+if(window.scrollY >= 9250){
       hotel[0].style.cssText = left;
 }
 
-if(window.scrollY >= 9600){
+if(window.scrollY >= 9500){
    hotel[1].style.cssText = bottom;
 }
 
-if(window.scrollY >= 9800){
+if(window.scrollY >= 9700){
    hotel[2].style.cssText = right;
 }
 // end hotel
@@ -357,39 +364,39 @@ if(window.scrollY >= 9800){
 
 // start sponsors
 
-if(window.scrollY >= 10400){
+if(window.scrollY >= 10300){
   
    sponsors_head.style.cssText =bottom;
 }
-if(window.scrollY >= 10500){
+if(window.scrollY >= 10400){
       sponsors[0].style.cssText = bottom;
 }
 
-if(window.scrollY >= 10700){
+if(window.scrollY >= 10600){
    sponsors[1].style.cssText = bottom;
 }
 
-if(window.scrollY >= 19000){
+if(window.scrollY >= 10900){
    sponsors[2].style.cssText = bottom;
 }
 
-if(window.scrollY >= 11100){
+if(window.scrollY >= 11000){
    sponsors[3].style.cssText = bottom;
 }
 
-if(window.scrollY >= 11300){
+if(window.scrollY >= 11200){
    sponsors[4].style.cssText = bottom;
 }
 
-if(window.scrollY >= 11500){
+if(window.scrollY >= 11400){
    sponsors[5].style.cssText = bottom;
 }
 
-if(window.scrollY >= 11700){
+if(window.scrollY >= 11600){
    sponsors[6].style.cssText = bottom;
 }
 
-if(window.scrollY >= 11900){
+if(window.scrollY >= 11800){
    sponsors[7].style.cssText = bottom;
 }
 
@@ -399,11 +406,11 @@ if(window.scrollY >= 11900){
 
 // head_faq
 
-if(window.scrollY >= 12100){
+if(window.scrollY >= 12000){
  
    faq_head.style.cssText = bottom;
 }
-if(window.scrollY >= 12300){
+if(window.scrollY >= 12200){
  
   faq_contener.style.cssText = bottom;
 }
@@ -411,11 +418,11 @@ if(window.scrollY >= 12300){
 // end faq
 
 // start .newsletter
-if(window.scrollY >= 13100){
+if(window.scrollY >= 13000){
   
    newsletter_head.style.cssText = bottom;
 }
-if(window.scrollY >= 13300){
+if(window.scrollY >= 13200){
  
   newsletter_form.style.cssText = bottom;
 }
@@ -424,38 +431,38 @@ if(window.scrollY >= 13300){
 
 // start buy ticket
 
-if(window.scrollY >= 13550){
+if(window.scrollY >= 13450){
   
    ticket_head.style.cssText = bottom;
 }
 
-if(window.scrollY >= 13800){
+if(window.scrollY >= 13600){
   ticket[0].style.cssText = left;    
 }
 
-if(window.scrollY >= 14200){
+if(window.scrollY >= 14100){
    ticket[1].style.cssText = bottom;;
  }
 
 
- if(window.scrollY >= 14700){
+ if(window.scrollY >= 14400){
    ticket[2].style.cssText = right;
  }
 // end buy ticket
 
 // start contact us
-if(window.scrollY >= 14450){
+if(window.scrollY >= 14550){
  
    contact_head.style.cssText = bottom;
 }
 
-if(window.scrollY >= 15200){
+if(window.scrollY >= 15000){
   contact_item[0].style.cssText = bottom; 
 }
-if(window.scrollY >= 15500){
+if(window.scrollY >= 15300){
    contact_item[1].style.cssText = bottom; 
  }
- if(window.scrollY >= 15800){
+ if(window.scrollY >= 15600){
    contact_item[2].style.cssText = bottom; 
  }
 
@@ -475,7 +482,8 @@ window.onload = function(){
       // start louding
    let loud = document.querySelector(".louding");
    loud.style.display = "none";
-   document.body.style.overflowY = "auto";
+   document.documentElement.style.overflowY = "visible";
+
    hero_content = document.querySelector(".hero-content");
    // start hero_content
       hero_content.style.cssText = "transform:scale(1,1);";
@@ -519,3 +527,21 @@ let  menu = document.querySelector("header .content i"),
        }
     };
  }
+
+
+ //  login_ticket
+let login = document.querySelector(".login_ticket"),
+    buy = document.querySelectorAll(".buy_ticket .contener .buy_ticket_content .item"),
+    cansel = document.querySelector(".login_ticket .heads i");
+
+    for(item of buy) {
+
+      item.onclick = function(){
+
+         login.style.display = "flex";
+      }
+    }
+ 
+cansel.onclick = function(){
+   login.style.display = "none";
+}

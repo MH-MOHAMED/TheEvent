@@ -1,10 +1,6 @@
 body {
+  width: 100%;
   overflow-x: hidden;
-  transform: none !important;
-  -webkit-transform: none !important;
-  -moz-transform: none !important;
-  -ms-transform: none !important;
-  -o-transform: none !important;
   overflow-y: hidden; }
 
 * {
@@ -15,7 +11,8 @@ body {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: hidden; }
 
 ul {
   list-style: none; }
@@ -375,6 +372,7 @@ header {
     .schedule .contener .content-schedule > div.registration {
       width: 100%;
       display: flex;
+      justify-content: center;
       border-bottom: 1px solid #cacedd;
       padding: 20px 0px 20px 0px;
       margin-top: 20px; }
@@ -397,7 +395,8 @@ header {
     .schedule .contener .content-schedule > div.event {
       border-bottom: 1px solid #cacedd;
       padding: 20px 0px 20px 0px;
-      display: flex; }
+      display: flex;
+      justify-content: center; }
       .schedule .contener .content-schedule > div.event:hover {
         background-color: white; }
       .schedule .contener .content-schedule > div.event > span {
@@ -420,7 +419,7 @@ header {
           -ms-border-radius: 50%;
           -o-border-radius: 50%; }
         .schedule .contener .content-schedule > div.event div section {
-          margin-left: 20px; }
+          margin-left: 30px; }
           .schedule .contener .content-schedule > div.event div section strong {
             font-size: 25px;
             font-weight: bold; }
@@ -455,7 +454,7 @@ header {
         line-height: 30px; }
   .venue .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2px 2px;
     justify-content: center;
     padding-top: 15px; }
@@ -795,6 +794,7 @@ footer {
       color: #f82249; }
 
 .up {
+  visibility: hidden;
   position: fixed;
   right: 40px;
   bottom: 60px;
@@ -805,11 +805,16 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white; }
+  color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%; }
   .up i {
     color: white; }
 
 .louding {
+  display: none;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -828,6 +833,64 @@ footer {
     animation: rotate 1s  infinite ease-in-out;
     -webkit-animation: rotate 1s  infinite ease-in-out;
     animation-direction: alternate; }
+
+.login_ticket {
+  padding-top: 40px;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: red;
+  display: flex;
+  justify-content: center;
+  display: none; }
+  .login_ticket section {
+    width: 700px;
+    background: white;
+    height: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .login_ticket section .heads {
+      padding: 0px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #cacedd; }
+      .login_ticket section .heads p {
+        color: #020214;
+        font-size: 18px;
+        padding-left: 30px; }
+      .login_ticket section .heads i {
+        color: #cacedd;
+        font-size: 25px;
+        padding-right: 30px;
+        cursor: pointer; }
+    .login_ticket section .login {
+      margin-top: 15px;
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 100%;
+      padding-bottom: 30px; }
+      .login_ticket section .login input, .login_ticket section .login select {
+        width: 100%;
+        margin-bottom: 20px;
+        outline: none;
+        border: 1px solid rgba(169, 169, 169, 0.39);
+        height: 30px;
+        padding-left: 10px; }
+      .login_ticket section .login input[type=submit] {
+        text-align: center;
+        display: block;
+        width: 30%;
+        height: 30px;
+        margin: auto;
+        background-color: #f82249;
+        color: white;
+        cursor: pointer; }
 
 @keyframes scal {
   from {
@@ -887,7 +950,7 @@ footer {
   -ms-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out; }
 
-.buy_ticket .contener .buy_ticket_content .item, .buy_ticket .contener .buy_ticket_content a, .contact .contener .forms .sub input {
+.buy_ticket .contener .buy_ticket_content .item, .buy_ticket .contener .buy_ticket_content a, .contact .contener .forms .sub input, .login_ticket section .login input[type=submit] {
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -948,8 +1011,17 @@ footer {
   .contener {
     width: 950px; } }
 @media (max-width: 767px) {
+  .login_ticket section {
+    width: 250px; }
+
+  .login_ticket section input[type=submit] {
+    width: 150px !important; }
+
   h2 {
     font-size: 25px !important; }
+
+  .head p {
+    font-size: 17px !important; }
 
   header .content .buy {
     display: none; }
@@ -966,7 +1038,8 @@ footer {
     margin-right: 0px; }
 
   .schedule .contener .content-schedule div.event,
-  .schedule .contener .content-schedule div.registration {
+  .schedule .contener .content-schedule div.registration,
+  .schedule .contener .content-schedule div.event {
     flex-direction: column; }
 
   .schedule .contener .content-schedule div.event div section {
@@ -995,7 +1068,10 @@ footer {
     border: none; }
 
   .buy_ticket .contener .buy_ticket_content {
-    gap: 20px 0px; } }
+    gap: 20px 0px; }
+
+  .up {
+    right: 20px; } }
 @media (max-width: 1199px) {
   header .content .logo {
     flex: 1; }

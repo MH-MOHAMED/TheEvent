@@ -1,13 +1,8 @@
 // strat body
 body{
-    
-    overflow-x: hidden;
-    transform: none !important;
-    -webkit-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -o-transform: none !important;
-     overflow-y:hidden;
+    width:100%;
+    overflow-x:hidden;
+    overflow-y:hidden;
 }
 // all elements
 *{
@@ -23,7 +18,7 @@ body{
 html{
    scroll-behavior: smooth;
    overflow-x: hidden;
- 
+   overflow-y:hidden;
 }
 // ul 
 ul{
@@ -562,6 +557,7 @@ i{
                 width:100%;
                 @extend %transition;
                 display:flex;
+                justify-content:center;
                  border-bottom: 1px solid $scondryColor;
                  padding: 20px 0px 20px 0px;
                  margin-top: 20px;
@@ -594,6 +590,7 @@ i{
                 border-bottom: 1px solid $scondryColor;
                 padding: 20px 0px 20px 0px;
                 display:flex;
+                justify-content:center;
                 &:hover{
                     background-color:$minColor;
                 }
@@ -621,7 +618,7 @@ i{
 }
 
                    section{
-                       margin-left: 20px;
+                       margin-left: 30px;
                     strong{
                         font-size:$header2;
                         font-weight: bold;
@@ -683,7 +680,7 @@ i{
 
     .gallery{
         display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap:2px 2px;
         justify-content: center;
         padding-top: 15px;
@@ -1206,25 +1203,30 @@ footer{
 
     }
 }
-
+// start up page
 .up{
-    position: fixed; 
+    visibility:hidden;
+    position: fixed;
     right:40px;
     bottom:60px;
     background-color:$thirdColr;
     width:50px;
     height: 50px;
     border-radius:50%;
-   display: flex;
-   justify-content: center;
-   align-items:center ;
-   color:$minColor;
-    i{color:$minColor;}
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    color:$minColor;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+i{color:$minColor;}
 }
 
 // start louding
 .louding{
-
+   display:none;
     position: absolute;
     top:0px;
     left:0px;
@@ -1249,6 +1251,82 @@ footer{
           
 }
     
+}
+
+// start login_ticket
+
+.login_ticket{
+  
+    padding-top:40px;
+    width:100%;
+    height:100vh;
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:200;
+    background-color:rgba(0, 0, 0, .4);
+    color:red;
+    display:flex;
+    justify-content:center;
+    display:none;
+    section{
+        
+        width:700px;
+        background:$minColor;
+        height:300px;
+        padding-top:30px;
+        padding-bottom:30px;
+        .heads{
+            padding:0px;
+            width:100%;
+            display:flex;
+            justify-content:space-between;
+            padding-bottom: 30px;
+            border-bottom: 1px solid $scondryColor;
+            p{
+                color:$ScondColor;
+                font-size: $normal;
+                padding-left:30px;
+            }
+            
+            i{
+                color:$scondryColor;
+                font-size:$header2;
+                padding-right:30px;
+                cursor: pointer;
+            }
+        }
+        .login{
+            margin-top:15px;
+            padding-left:30px;
+            padding-right:30px;
+            width:100%;
+           padding-bottom: 30px;
+            input, select{
+                width:100%;
+                margin-bottom:20px;
+                outline:none;
+                border: 1px solid rgba(169, 169, 169, 0.39);
+                height:30px;
+                padding-left:10px;
+                
+            }
+            input[type=submit]{
+                text-align: center;
+                display:block;
+                width:30%;
+                height:30px;
+                margin:auto;
+                @extend %border;
+                background-color:$thirdColr;
+                color:$minColor;
+                cursor: pointer;
+                
+           }
+        }
+       
+    }
+
 }
 // start animation
 
@@ -1415,8 +1493,13 @@ p{
 // start smal media
 @media (max-width:767px) {
 
-    h2{font-size: 25px !important;}
 
+    .login_ticket section{width:250px;}
+    .login_ticket section input[type=submit]{
+        width:150px !important;
+    }
+    h2{font-size: 25px !important;}
+     .head p {font-size:17px !important}
     header .content .buy{
         display:none;
     }
@@ -1432,7 +1515,8 @@ p{
     .schedule .contener .content-schedule div.registration>span
     {margin-right: 0px;}
     .schedule .contener .content-schedule div.event,
-    .schedule .contener .content-schedule div.registration{flex-direction: column;}
+    .schedule .contener .content-schedule div.registration,
+    .schedule .contener .content-schedule div.event {flex-direction: column;}
     .schedule .contener .content-schedule div.event div section{margin-left: 0px;}
     .schedule .contener .content-schedule div.event div section span{margin-left: 0px;}
     .schedule .contener .content-schedule div.event div section strong,
@@ -1448,7 +1532,7 @@ p{
    
    .contact .contener .contact-content .item{border:none;}
    .buy_ticket .contener .buy_ticket_content{gap:20px 0px} 
-
+   .up{right:20px;}
     
 }
 @media (max-width:1199px) {
