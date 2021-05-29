@@ -590,7 +590,7 @@ i{
                 border-bottom: 1px solid $scondryColor;
                 padding: 20px 0px 20px 0px;
                 display:flex;
-                justify-content:center;
+               
                 &:hover{
                     background-color:$minColor;
                 }
@@ -1374,36 +1374,36 @@ i{color:$minColor;}
 // start up animation 
 
 %up-animation{
-   transition: 1s ease-in-out;
+   transition: .4s ease-in-out;
    position:relative;
    bottom:-400px;
    visibility:hidden;
-   -webkit-transition: 1s ease-in-out;
-   -moz-transition: 1s ease-in-out;
-   -ms-transition: 1s ease-in-out;
-   -o-transition: 1s ease-in-out;
+   -webkit-transition: .4s ease-in-out;
+   -moz-transition: .4s ease-in-out;
+   -ms-transition: .4s ease-in-out;
+   -o-transition: .4s ease-in-out;
 }
 
 %left{
     visibility: hidden;
     position:relative;
     left:-100%;
-    transition: 1s ease-in-out;
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -ms-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
 }
 
 %right{
     visibility: hidden;
     position:relative;
     right:-100%;
-    transition: 1s ease-in-out;
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -ms-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
 }
 // scal and rotat
 %border{
